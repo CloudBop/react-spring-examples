@@ -42,7 +42,7 @@ const Waypoints = () => {
       <div style={{ overflowY: 'hidden' }}>
         <Waypoint
           onEnter={() => toggleAnimate(true)} // topOffset="-30%" //
-          bottomOffset="30%"
+          bottomOffset="75%"
         />
 
         <animated.p style={animation}>

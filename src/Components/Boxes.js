@@ -28,7 +28,7 @@ const Boxes = () => {
         onEnter={() => toggleAnimate(true)} // topOffset="-30%" //
         bottomOffset="50%"
       />
-      {springs.map((animation, idx) => <animated.div key={idx} className="box" style={animation} />)}
+      {toggle ? springs.map((animation, idx) => <animated.div key={idx} className="box" style={animation} />) : null}
     </div>
   );
 };

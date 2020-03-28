@@ -23,7 +23,9 @@ import Trail from './Components/Trail';
 import ChainBoxes from './Components/ChainBoxes';
 import TransitionBoxes from './Components/TransitionBoxes';
 import TransitionChainBoxes from './Components/TransitionTrailChainBoxes';
-
+import ToDoConfetti from './Components/ConfettiCannon/TodoCheckbox/TodoCheckbox';
+//
+const toDos = [ 'Write draft', 'Implement prototype', 'Send to LogRocket' ];
 //
 function App() {
   return (
@@ -31,6 +33,12 @@ function App() {
       <header className="App-header">
         <h1>React-Spring Playground</h1>
       </header>
+
+      <div className="example-container light">
+        <h2>test confetti</h2>
+        <h3>My To Do List</h3>
+        {toDos.map(t => <ToDoConfetti colors={[ 'blue', 'red', 'yellow', 'purple' ]} key={t} text={t} />)}
+      </div>
       <div className="example-container light">
         <Fade />
       </div>
